@@ -1,0 +1,176 @@
+
+* {
+	box-sizing: border-box;
+}
+
+.bg{
+	background-color:#371a46;
+}
+
+header{
+	padding-top: 10px;
+	background-color: #371a46;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+	height: 80px;
+}
+
+header .logo{
+	display: inline-block;
+}
+
+header nav{
+	float:right;
+}
+
+header nav ul li{
+	display: inline-block;
+}
+
+header nav ul li a {
+	letter-spacing: 0.15em;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	margin-right: 24px;
+	text-decoration: none;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+a:after {    
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #fff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+
+a:hover::after{
+	width: 100%; 
+  	left: 0; 
+	right: 0;
+}
+
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+} 
+
+body{
+	margin: 0;
+	font-family: 'Roboto Mono', monospace;
+	background-color: #371a46;
+	color: #ffff;
+}
+
+body a{
+	text-align: center;
+}
+
+body h1{
+	text-align: center;
+	font-size: 30px;
+	line-height: 42px;
+	font-weight: normal;
+	margin: 0 0 5px 0 ;
+	padding-bottom: 10px;
+	color: #f92323;
+
+}
+body hr{
+	border: none;
+	border-top: 5px solid #f92323;
+	width: 100px;
+	padding-bottom: 10px;
+}
+
+.site{
+	display: inline-block;
+}
+
+section.site{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+p.site{
+	float: left;
+}
+
+img.site{
+	float:right;
+}
+
+.projects{
+	text-align: center;
+}
+
+section.projects{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	
+}
+
+.post-author {
+    color: #6C6C6C;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.container {
+	max-height: 1440px;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+}
+
+.contato{
+	text-align: center;
+}
+
+#contato li{
+	display: inline-block;
+	text-align: center;
+}
+
+#contato li a{
+	text-align: center;
+	display: inline-block;
+	margin: 1em;
+	width: 48px;
+	height: 48px;
+	text-indent: -99999999px;
+}
+
+#contato .email{
+	background-image: url('imagens/email.png');
+}
+
+#contato .facebook{
+	background-image: url('imagens/facebook.png');
+}
+
+#contato .github{
+	background-image: url('imagens/github.png');
+}
+
+#contato .twitter{
+	background-image: url('imagens/twitter.png');
+}
+
+#contato .linkedin{
+	background-image: url('imagens/linkedin.png');
+}
+
+footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+	text-align: center;
+}
+
